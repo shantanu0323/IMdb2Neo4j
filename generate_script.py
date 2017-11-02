@@ -12,4 +12,4 @@ for movie in movies:
 
     for actor in movie['actors']:
 
-        file.write("MERGE (:MOVIE {title:'" + str(actor['name']).replace("'","-") + "'})\n")
+        file.write("MERGE (:ACTOR {title:'" + str(actor['name']).replace("'","-") + "'})\n")
