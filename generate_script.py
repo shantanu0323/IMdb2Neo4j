@@ -1,10 +1,10 @@
-f = open("./output.json")
+f = open("./cast.json")
 s= f.read()
 import json
 root = json.loads(s)
 file = open("./script1.txt", "w")
 
-movies = root['Top250Movies']
+movies = root['Movies']
 
 for movie in movies:
 
